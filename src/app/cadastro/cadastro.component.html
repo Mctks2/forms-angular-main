@@ -46,8 +46,23 @@
           class="campo__escrita"
           ngModel
           required
+          maiorIdadeValidator
           #nascimento="ngModel"
         />
+        <div
+          *ngIf="
+            (nascimento?.invalid && nascimento?.touched) || nascimento?.dirty
+          "
+        >
+          <app-mensagem
+            *ngIf="nascimento?.errors?.['required']"
+            mensagem="A data de nascimento deve ser preenchida"
+          ></app-mensagem>
+          <app-mensagem
+            *ngIf="nascimento?.errors?.['maiorIdadeValidator']"
+            mensagem="O usuário deve ter pelo menos 18 anos"
+          ></app-mensagem>
+        </div>
       </div>
 
       <!-- CONTATO -->
@@ -100,7 +115,7 @@
         ></app-mensagem>
         <app-mensagem
           *ngIf="email?.errors?.['pattern']"
-          mensagem="O telefone deve seguir este padrão: exemplo@dominio.com"
+          mensagem="O email deve seguir este padrão: exemplo@dominio.com"
         ></app-mensagem>
       </div>
     </div>
