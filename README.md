@@ -1,27 +1,70 @@
-# FormsReativos
+# 📚 AluraBooks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+**AluraBooks** é um projeto desenvolvido em **Angular** que simula o cadastro de usuários em uma plataforma de venda de livros. O foco está na utilização de um formulário dinâmico, validações eficientes e integração com uma API de CEP para preenchimento automático do endereço.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Funcionalidades
 
-## Code scaffolding
+- **Formulário de Cadastro**:
+  - **Dados Pessoais**:
+    - Nome.
+    - Data de nascimento.
+    - Contato.
+    - E-mail.
+  - **Endereço**:
+    - Campos para CEP, rua, bairro, cidade e estado.
+    - Integração com uma **API de endereços em JSON** para preenchimento automático ao informar o CEP.
+  
+- **Validações**:
+  - Campos obrigatórios devidamente validados.
+  - Feedbacks visuais para informar erros ou preenchimento correto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Fluxo de Cadastro**:
+  - Após preencher todos os campos corretamente, o botão **"Enviar Formulário"** será habilitado.
+  - Ao clicar em **Enviar Formulário**, o usuário é redirecionado para uma página de confirmação com a mensagem:
+    - **"Seu formulário foi cadastrado com sucesso!"**
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tecnologias Utilizadas
 
-## Running unit tests
+- **Angular** 
+- **TypeScript** 
+- **HTML**
+- **CSS** 
+- **JavaScript** 
+- **API de CEP**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 📂 Como Rodar o Projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/alurabooks.git
+   ```
+   
+2. Acesse o diretório do projeto:
+   ```bash
+   cd alurabooks
+   ```
 
-## Further help
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Execute o projeto:
+   ```bash
+   ng serve
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:4200
+   ```
+
+## 🎬 Imagens / Vídeos
+   
+![angular-forms](https://github.com/user-attachments/assets/6cace8bb-b438-42e3-93d3-7d156028832c)
+
+
+
